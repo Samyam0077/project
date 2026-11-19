@@ -5,7 +5,7 @@ session_start();
 header('X-Robots-Tag: noindex, nofollow');
 
 $ADMIN_PASSWORD = trim((string)$ADMIN_PASSWORD); // ignore accidental spaces in config.php
-$configured = ($ADMIN_PASSWORD !== '' && $ADMIN_PASSWORD !== 'SamyamAdmin2026');
+$configured = ($ADMIN_PASSWORD !== '' && $ADMIN_PASSWORD !== '(PASSWORD_HERE)');
 if (empty($_SESSION['csrf'])) $_SESSION['csrf'] = bin2hex(random_bytes(16));
 $notice = '';
 
