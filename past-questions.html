@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Past Questions | Samyam Rijal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/stylesamyam.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">SR<span class="dot">.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="past-questions.html" class="nav-cta">Past Question</a>
+  </header>
+
+  <section class="pq-hero">
+    <p class="eyebrow">Study Resources</p>
+    <h1>Past <span class="grad-text">Questions</span></h1>
+    <p>Pick a category, or search by subject or year. Every link opens the Google Drive file in a new tab.</p>
+  </section>
+
+  <div class="pq-tools">
+    <input id="search" class="search" type="search" placeholder="Search subject, year, type..." aria-label="Search past questions">
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <main class="pq-list" id="list">
+    <p class="pq-empty">Loading...</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="index.html" class="logo">SR<span class="dot">.</span></a>
+      <p>&copy; <span id="year"></span> Samyam Rijal. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/pq.js"></script>
+</body>
+</html>
